@@ -1,0 +1,177 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASM	Makefile	/^ASM=nasm$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+DEFAULT_COLOR	include/screen.h	23;"	d
+LD	Makefile	/^LD=ld$/;"	m
+LOCKED	include/lock.h	/^typedef enum {UNLOCKED = 0, LOCKED = 1}lock_t;$/;"	e	enum:__anon3
+MAX_COLUMN	include/screen.h	22;"	d
+MAX_LINE	include/screen.h	21;"	d
+OBJDIR	Makefile	/^OBJDIR:=$(PWD)\/obj$/;"	m
+PWD	Makefile	/^PWD:=$(shell pwd)$/;"	m
+SCREEN_BASE_ADDR	include/screen.h	20;"	d
+SPIN_LOCKED	include/lock.h	/^typedef enum {SPIN_UNLOCKED = 0, SPIN_LOCKED = 1}spin_lock_t;$/;"	e	enum:__anon4
+SPIN_UNLOCKED	include/lock.h	/^typedef enum {SPIN_UNLOCKED = 0, SPIN_LOCKED = 1}spin_lock_t;$/;"	e	enum:__anon4
+TASK_RUNABLE	include/task.h	8;"	d
+TASK_RUNNING	include/task.h	7;"	d
+TASK_STOPPED	include/task.h	9;"	d
+UNLOCKED	include/lock.h	/^typedef enum {UNLOCKED = 0, LOCKED = 1}lock_t;$/;"	e	enum:__anon3
+_LOCK_H	include/lock.h	2;"	d
+_PAGE_H	include/page.h	2;"	d
+_PRINTK_H	include/printk.h	2;"	d
+_SCREEN_H	include/screen.h	15;"	d
+_STRING_H	include/string.h	2;"	d
+_TASK_H	include/task.h	2;"	d
+_read_char	driver/screen.c	/^static inline screen_char _read_char(int line, int column)$/;"	f	file:
+_write_char	driver/screen.c	/^static inline void _write_char(int line, int column, screen_char color_ascii)$/;"	f	file:
+ascii	include/screen.h	/^			char ascii;$/;"	m	struct:screen_char_t::__anon1::__anon2
+blank_char	driver/screen.c	/^screen_char blank_char = {$/;"	v
+ca	include/screen.h	/^		} ca;$/;"	m	union:screen_char_t::__anon1	typeref:struct:screen_char_t::__anon1::__anon2
+cld	boot/setup.asm	/^cld$/;"	l
+clear_screen	driver/screen.c	/^void clear_screen()$/;"	f
+cli	boot/setup.asm	/^cli$/;"	l
+cli	include/interrupt.h	4;"	d
+color	include/screen.h	/^			char color;$/;"	m	struct:screen_char_t::__anon1::__anon2
+color_ascii	include/screen.h	/^		uint16_t color_ascii;$/;"	m	union:screen_char_t::__anon1
+cr3	include/task.h	/^	uint32_t cr3;$/;"	m	struct:tss_struct
+cs	include/task.h	/^	uint32_t es, cs, ss, ds, fs, gs;$/;"	m	struct:tss_struct
+current_column	include/screen.h	/^	int current_column;$/;"	m	struct:screen_t
+current_line	include/screen.h	/^	int current_line;$/;"	m	struct:screen_t
+ds	include/task.h	/^	uint32_t es, cs, ss, ds, fs, gs;$/;"	m	struct:tss_struct
+dw	boot/boot.asm	/^dw 0xaa55$/;"	l
+eax	include/task.h	/^	uint32_t eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+ebp	include/task.h	/^	uint32_t esp, ebp;$/;"	m	struct:tss_struct
+ebx	include/task.h	/^	uint32_t eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+ecx	include/task.h	/^	uint32_t eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+edi	include/task.h	/^	uint32_t esi, edi;$/;"	m	struct:tss_struct
+edx	include/task.h	/^	uint32_t eax, ecx, edx, ebx;$/;"	m	struct:tss_struct
+eflags	include/task.h	/^	uint32_t eflags;$/;"	m	struct:tss_struct
+eip	include/task.h	/^	uint32_t eip;$/;"	m	struct:tss_struct
+enable_a20	boot/setup.asm	/^enable_a20:$/;"	l
+es	include/task.h	/^	uint32_t es, cs, ss, ds, fs, gs;$/;"	m	struct:tss_struct
+esi	include/task.h	/^	uint32_t esi, edi;$/;"	m	struct:tss_struct
+esp	include/task.h	/^	uint32_t esp, ebp;$/;"	m	struct:tss_struct
+esp0	include/task.h	/^	uint32_t esp0, ss0;$/;"	m	struct:tss_struct
+esp1	include/task.h	/^	uint32_t esp1, ss1;$/;"	m	struct:tss_struct
+esp2	include/task.h	/^	uint32_t esp2, ss2;$/;"	m	struct:tss_struct
+f	Makefile	/^	dd if=$(OBJDIR)\/head.bin of=birdos.img seek=5 bs=512 count=12$/;"	m
+f	Makefile	/^	dd if=$(OBJDIR)\/setup.bin of=birdos.img seek=1 bs=512 count=4$/;"	m
+f	Makefile	/^	dd if=\/dev\/zero of=birdos.img seek=17 bs=512 count=2863$/;"	m
+fs	include/task.h	/^	uint32_t es, cs, ss, ds, fs, gs;$/;"	m	struct:tss_struct
+gdt_48	boot/setup.asm	/^gdt_48:$/;"	l
+gdt_addr	boot/setup.asm	/^gdt_addr:$/;"	l
+gs	include/task.h	/^	uint32_t es, cs, ss, ds, fs, gs;$/;"	m	struct:tss_struct
+idt_48	boot/setup.asm	/^idt_48:$/;"	l
+in	boot/setup.asm	/^in al, 92h$/;"	l
+int	boot/boot.asm	/^int 13h$/;"	l
+int	boot/setup.asm	/^int 10h$/;"	l
+int	boot/setup.asm	/^int 13h$/;"	l
+io_bitmap	include/task.h	/^	uint32_t io_bitmap;$/;"	m	struct:tss_struct
+jmp	boot/boot.asm	/^jmp word 252*1024\/16:0$/;"	l
+jmp	boot/setup.asm	/^jmp $+2		;延时作用$/;"	l
+jmp	boot/setup.asm	/^jmp $+2$/;"	l
+jmp	boot/setup.asm	/^jmp dword 8:16*1024$/;"	l
+jmp	init/head.s	/^jmp .$/;"	l
+ldt	include/task.h	/^	uint32_t ldt;$/;"	m	struct:tss_struct
+lgdt	boot/setup.asm	/^lgdt [gdt_48]$/;"	l
+lidt	boot/setup.asm	/^lidt [idt_48]$/;"	l
+load_kernel	boot/setup.asm	/^load_kernel:$/;"	l
+load_setup	boot/boot.asm	/^load_setup:$/;"	l
+lock	include/lock.h	/^static inline int lock(lock_t *lock_v)$/;"	f
+lock	include/screen.h	/^	spin_lock_t lock;$/;"	m	struct:screen_t
+lock_t	include/lock.h	/^typedef enum {UNLOCKED = 0, LOCKED = 1}lock_t;$/;"	t	typeref:enum:__anon3
+main	init/main.c	/^int main()$/;"	f
+main	tools/fw.c	/^int main(int argc, char **argv)$/;"	f
+memset	lib/string.c	/^void memset(void *src, int val, int size)$/;"	f
+mov	boot/boot.asm	/^mov ah, byte 02h	;功能号0x02 = 读磁盘数据到内存$/;"	l
+mov	boot/boot.asm	/^mov al, byte 4		;al是需要读取的扇区数量,软盘每磁道有18个扇区$/;"	l
+mov	boot/boot.asm	/^mov ax, 252*1024\/16$/;"	l
+mov	boot/boot.asm	/^mov ax, cs$/;"	l
+mov	boot/boot.asm	/^mov bx, word 0h		;es:bx: 目的地址。如果出错则CF标志置位$/;"	l
+mov	boot/boot.asm	/^mov cx, word 0002h	;ch磁道号的低8位,cl(0-5开始扇区,6-7磁道号的高两位)$/;"	l
+mov	boot/boot.asm	/^mov ds, ax$/;"	l
+mov	boot/boot.asm	/^mov dx, word 0000h	;dh磁头号,dl驱动器号$/;"	l
+mov	boot/boot.asm	/^mov es, ax$/;"	l
+mov	boot/setup.asm	/^mov ah, byte 02h$/;"	l
+mov	boot/setup.asm	/^mov al, 0x1$/;"	l
+mov	boot/setup.asm	/^mov al, 0x11$/;"	l
+mov	boot/setup.asm	/^mov al, 0x2$/;"	l
+mov	boot/setup.asm	/^mov al, 0x20$/;"	l
+mov	boot/setup.asm	/^mov al, 0x28$/;"	l
+mov	boot/setup.asm	/^mov al, 0x4$/;"	l
+mov	boot/setup.asm	/^mov al, 0xff$/;"	l
+mov	boot/setup.asm	/^mov al, byte 12$/;"	l
+mov	boot/setup.asm	/^mov ax, 0x4f02$/;"	l
+mov	boot/setup.asm	/^mov ax, 16$/;"	l
+mov	boot/setup.asm	/^mov ax, 16*1024\/16$/;"	l
+mov	boot/setup.asm	/^mov ax, 4096\/16$/;"	l
+mov	boot/setup.asm	/^mov ax, cs$/;"	l
+mov	boot/setup.asm	/^mov bx, 0x108$/;"	l
+mov	boot/setup.asm	/^mov bx, word 0h$/;"	l
+mov	boot/setup.asm	/^mov cr0, eax$/;"	l
+mov	boot/setup.asm	/^mov cx, 24$/;"	l
+mov	boot/setup.asm	/^mov cx, word 0006h	;从第6扇区开始加载,共加载12个扇区$/;"	l
+mov	boot/setup.asm	/^mov ds, ax$/;"	l
+mov	boot/setup.asm	/^mov dx, word 0000h$/;"	l
+mov	boot/setup.asm	/^mov eax, cr0$/;"	l
+mov	boot/setup.asm	/^mov es, ax$/;"	l
+mov	boot/setup.asm	/^mov si, gdt_addr$/;"	l
+mov	boot/setup.asm	/^mov sp, 0x400$/;"	l
+mov	boot/setup.asm	/^mov ss, ax$/;"	l
+movb	init/head.s	/^movb $'P', %al$/;"	l
+movb	init/head.s	/^movb $0x07, %ah$/;"	l
+movl	init/head.s	/^movl $0x9000, %esp$/;"	l
+movw	init/head.s	/^movw $0x10, %ax$/;"	l
+movw	init/head.s	/^movw %ax, %ds$/;"	l
+movw	init/head.s	/^movw %ax, %es$/;"	l
+movw	init/head.s	/^movw %ax, %fs$/;"	l
+movw	init/head.s	/^movw %ax, %gs$/;"	l
+movw	init/head.s	/^movw %ax, 0xb8000$/;"	l
+next	include/task.h	/^	struct task_struct *next;$/;"	m	struct:task_struct	typeref:struct:task_struct::task_struct
+or	boot/setup.asm	/^or  eax, 1h$/;"	l
+or	boot/setup.asm	/^or al, 0x02$/;"	l
+org	boot/boot.asm	/^org 07c00h$/;"	l
+out	boot/setup.asm	/^out 0x20, al$/;"	l
+out	boot/setup.asm	/^out 0x21, al$/;"	l
+out	boot/setup.asm	/^out 0xa0, al$/;"	l
+out	boot/setup.asm	/^out 0xa1, al$/;"	l
+out	boot/setup.asm	/^out 92h, al$/;"	l
+over	init/head.s	/^over:$/;"	l
+prev_task_link	include/task.h	/^	uint32_t prev_task_link;$/;"	m	struct:tss_struct
+print_int	lib/printk.c	/^int print_int(int32_t num)$/;"	f
+print_str	lib/printk.c	/^int print_str(char *str)$/;"	f
+printk	lib/printk.c	/^int printk(const char *str, ...)$/;"	f
+priority	include/task.h	/^	int32_t priority;$/;"	m	struct:task_struct
+pushl	init/head.s	/^pushl $main$/;"	l
+pushl	init/head.s	/^pushl $over$/;"	l
+rep	boot/setup.asm	/^rep movsw$/;"	l
+ret	init/head.s	/^ret$/;"	l
+roll_one_line	driver/screen.c	/^static void roll_one_line()$/;"	f	file:
+scr_stat	driver/screen.c	/^struct screen_t scr_stat = {.lock = SPIN_UNLOCKED,$/;"	v	typeref:struct:screen_t
+screen_char	include/screen.h	/^typedef struct screen_char_t screen_char;$/;"	t	typeref:struct:screen_char_t
+screen_char_t	include/screen.h	/^struct screen_char_t {$/;"	s
+screen_t	include/screen.h	/^struct screen_t{$/;"	s
+spin_lock	include/lock.h	/^static void spin_lock(spin_lock_t *lock_v)$/;"	f
+spin_lock_t	include/lock.h	/^typedef enum {SPIN_UNLOCKED = 0, SPIN_LOCKED = 1}spin_lock_t;$/;"	t	typeref:enum:__anon4
+spin_unlock	include/lock.h	/^static void spin_unlock(spin_lock_t *lock_v)$/;"	f
+ss	include/task.h	/^	uint32_t es, cs, ss, ds, fs, gs;$/;"	m	struct:tss_struct
+ss0	include/task.h	/^	uint32_t esp0, ss0;$/;"	m	struct:tss_struct
+ss1	include/task.h	/^	uint32_t esp1, ss1;$/;"	m	struct:tss_struct
+ss2	include/task.h	/^	uint32_t esp2, ss2;$/;"	m	struct:tss_struct
+start	init/head.s	/^start:$/;"	l
+sti	include/interrupt.h	3;"	d
+strcat	lib/string.c	/^char *strcat(char *dst, const char *src)$/;"	f
+strcpy	lib/string.c	/^char *strcpy(char *dst, const char *src)$/;"	f
+task_state	include/task.h	/^	uint32_t task_state;$/;"	m	struct:task_struct
+task_struct	include/task.h	/^struct task_struct {$/;"	s
+times	boot/boot.asm	/^times 510-($-$$) db 0$/;"	l
+tss	include/task.h	/^	struct tss_struct tss;$/;"	m	struct:task_struct	typeref:struct:task_struct::tss_struct
+tss_entry	include/task.h	/^	uint32_t tss_entry;$/;"	m	struct:task_struct
+tss_struct	include/task.h	/^struct tss_struct {$/;"	s
+unlock	include/lock.h	/^static inline int unlock(lock_t *lock_v)$/;"	f
+write_char	driver/screen.c	/^void write_char(char c)$/;"	f
+xor	boot/setup.asm	/^xor di, di$/;"	l
